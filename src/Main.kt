@@ -1,9 +1,15 @@
-/** Задание 2: Hello Aplana
- * Создайте две переменные типа String, содержащие "hello" и "aplana"
- * И выведите их в консоль так что бы получилось: hello aplana
+/** Задание 3: Преобразование
+ * Преобразуйте  в String:
+ * var five: Char = '5'
+ * Затем полученный String преобразуйте в Byte, Short, Int, Double, FLoat и Long
  */
 fun main(args: Array<String>) {
-    val hello = "hello"
-    val aplana = "aplana"
-    print("$hello $aplana")
+    var five: Char = '5'
+    val fiveString = five.toString()
+    val fiveByte = fiveString.toByte()
+    val fiveShort = fiveString.toShort()
+    val fiveInt  = fiveString.toInt()
+    val fiveLong = fiveString.toLong()
+    val fiveFloat = fiveString.toFloat()
+    val fiveDouble = fiveString.toDouble()
 }
