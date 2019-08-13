@@ -1,15 +1,16 @@
-/** Задание 5: Алфавит
- * Создайте переменную, содержащую последовательность английского алфавита наоборот – начиная с последней буквы алфавита и заканчивая первой буквой.
+/** Задание 6: Сравнение
+ * Напишите программу, которая запрашивает у пользователя два числа в переменные “a” и “b”.
+ * Проверьте больше ли "a" чем "b" и получите результат в виде переменой типа boolean.
  */
 fun main(args: Array<String>) {
-    val alphabetBackwardsLarge = 'Z' downTo 'A'
-    val alphabetBackwardsSmall = 'z' downTo 'a'
+    print("Please enter variable \"a\": ")
+    val a = readLine()!!
 
-    for (i in alphabetBackwardsLarge)
-        print("$i ")
+    print("Please enter variable \"b\": ")
+    val b = readLine()!!
 
-    print("\n")
-
-    for (i in alphabetBackwardsSmall)
-        print("$i ")
+    // Конвертируем введеный String в Double для расширения принимаемых для сравнения значений
+    // NumberFormatException будем получать только для пустых/нечисловых значений a и/или b
+    val aMoreThanB = a.toDouble() > b.toDouble()
+    print("a > b? Answer: $aMoreThanB")
 }
