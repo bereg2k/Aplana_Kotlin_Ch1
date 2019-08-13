@@ -1,8 +1,15 @@
-/** Задание 4: Приветствие пользователя
- * Напишите программу, запрашивающую имя пользователя и выводящую приветствие пользователя в консоль, после ввода имени.
+/** Задание 5: Алфавит
+ * Создайте переменную, содержащую последовательность английского алфавита наоборот – начиная с последней буквы алфавита и заканчивая первой буквой.
  */
 fun main(args: Array<String>) {
-    println("What's your name, mate?")
-    val usernameInput = readLine()
-    println("Hello, $usernameInput! It's nice to see you!")
+    val alphabetBackwardsLarge = 'Z' downTo 'A'
+    val alphabetBackwardsSmall = 'z' downTo 'a'
+
+    for (i in alphabetBackwardsLarge)
+        print("$i ")
+
+    print("\n")
+
+    for (i in alphabetBackwardsSmall)
+        print("$i ")
 }
