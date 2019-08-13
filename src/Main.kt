@@ -1,15 +1,8 @@
-/** Задание 3: Преобразование
- * Преобразуйте  в String:
- * var five: Char = '5'
- * Затем полученный String преобразуйте в Byte, Short, Int, Double, FLoat и Long
+/** Задание 4: Приветствие пользователя
+ * Напишите программу, запрашивающую имя пользователя и выводящую приветствие пользователя в консоль, после ввода имени.
  */
 fun main(args: Array<String>) {
-    var five: Char = '5'
-    val fiveString = five.toString()
-    val fiveByte = fiveString.toByte()
-    val fiveShort = fiveString.toShort()
-    val fiveInt  = fiveString.toInt()
-    val fiveLong = fiveString.toLong()
-    val fiveFloat = fiveString.toFloat()
-    val fiveDouble = fiveString.toDouble()
+    println("What's your name, mate?")
+    val usernameInput = readLine()
+    println("Hello, $usernameInput! It's nice to see you!")
 }
